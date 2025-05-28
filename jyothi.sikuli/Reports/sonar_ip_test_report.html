@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Plan Execution Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #003366;
+        }
+        .summary {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            width: 50%;
+        }
+        details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .pass {
+            color: green;
+            font-weight: bold;
+        }
+        .fail {
+            color: red;
+            font-weight: bold;
+        }
+        .restart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Plan Execution Report </h1>
+    <div class="summary">
+        <h3>Summary</h3>
+        <p>Total Tests: 240</p>
+        <p>Passed: <span class="pass">240</span></p>
+        <p>Failed: <span class="fail">0</span></p>
+    </div>
+
+    <details open>
+        <summary><strong>SONAR IP Tests</strong></summary>
+        
+    <table>
+        <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+        <tr><td>TC001</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-1234</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hello</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+
+    </table>
+    
+    </details>
+
+    <details open>
+        <summary><strong>FDS_Id Tests</strong></summary>
+        
+    <table>
+        <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+        <tr><td>TC001</td><td>-123</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>hello</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>456</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+
+    </table>
+    
+    </details>
+    <details open>
+        <summary><strong>FDS_IP Tests</strong></summary>
+        
+    <table>
+        <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+        <tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+
+    </table>
+    
+    </details>
+    <details open>
+        <summary><strong>FDS_Port Tests</strong></summary>
+        
+    <table>
+        <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+        <tr><td>TC001</td><td>8775</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-3345</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>bell</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+
+    </table>
+    
+    </details>
+    <details open>
+        <summary><strong>FDS_message Tests</strong></summary>
+        
+    <table>
+        <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+        <tr><td>TC001</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-10</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>25</td><td class='pass'>Pass</td></tr>
+
+    </table>
+    
+    </details>
+    <details open>
+<summary><strong>INTERNAL_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-10</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>hello</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>78</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>INTERNAL_rx_port(1) Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>EXTERNAL_RX_rlg_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>hello</td> <td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-67</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>987</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>EXTERNAL_RX_radar_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>gty</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-98</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>887</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SHHD_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>13.6.4.6</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>-998</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SHHD_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>8775</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-3345</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>bell</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+
+</table>
+</details>
+<details open>
+<summary><strong>SHHD_id Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-123</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>hello</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>456</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+
+</table>
+</details>
+<details open>
+<summary><strong>SHHD_message Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-10</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>25</td><td class='pass'>Pass</td></tr>
+
+</table>
+</details>
+<details open>
+<summary><strong>RADAR_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RADAR_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>8775</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-3345</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>bell</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RADAR_id Tests</strong></summary>
+<table>
+    <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-123</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>hello</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>456</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RADAR_message Tests</strong></summary>
+<table>
+    <tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-10</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>25</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IAC_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IAC_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IAC_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IAC_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>CMS_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>CMS_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>CMS_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>CMS_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>ATDS_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+
+</table>
+</details>
+<details open>
+<summary><strong>ATDS_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>ATDS_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>ATDS_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>XBT_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+Z<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>XBT_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>XBT_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>XBT_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>LINK2_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+
+</table>
+</details>
+<details open>
+<summary><strong>LINK2_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>LINK2_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>LINK2_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>NTP_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>NTP_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>NTP_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>NTP_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IBS_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IBS_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IBS_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>IBS_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SCS_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SCS_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SCS_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>SCS_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>UWTA_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>UWTA_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>UWTA_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>UWTA_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RLG_mac_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-78.8.9.7</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>hey</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>239.1.5.4</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RLG_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RLG_rx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>RLG_tx_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>-5</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abc</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>123</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>HMI_ip Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>0.0.0.0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>abcd</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>-176.8.9.4</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>13.4.5.6</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>HMI_port Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>8775</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-3345</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>bell</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>0</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+<details open>
+<summary><strong>HEALTH_timer Tests</strong></summary>
+<table>
+<tr><th>Test Case Key</th><th>Input</th><th>Result</th></tr>
+<tr><td>TC001</td><td>20</td><td class='pass'>Pass</td></tr>
+<tr><td>TC002</td><td>-10</td><td class='pass'>Pass</td></tr>
+<tr><td>TC003</td><td>0</td><td class='pass'>Pass</td></tr>
+<tr><td>TC004</td><td>abc</td><td class='pass'>Pass</td></tr>
+</table>
+</details>
+
+</body>
+</html>
+
+</body>
+</html>

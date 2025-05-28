@@ -1,0 +1,37 @@
+import os
+from time import strftime
+App.open("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe")
+wait(2)
+type("http://127.0.0.1:5000")
+type(Key.ENTER)
+wait(6)
+report_path = r"C:\Users\User\Desktop\jyothi.sikuli\Reports\sonar_ip_test_report.txt"
+if not os.path.exists(report_path):
+    f = open(report_path, "w")
+    f.write("Test Plan Execution Report - SONAR IP Field\n")
+    f.write("Generated: " + strftime("%Y-%m-%d %H:%M:%S") + "\n\n")
+    f.write("Test Case Key,Input,Result\n")
+    f.close()
+type("r", KeyModifier.CTRL) 
+wait(4)
+click("fds.png")        
+wait(1)
+click("fds_port.png")     
+wait(1)
+type("a", KeyModifier.CTRL)
+type(Key.BACKSPACE)
+type("0")
+wait(2)
+type(Key.PAGE_DOWN)
+wait(2)
+type(Key.PAGE_DOWN)
+wait(0.5)
+click("save_button.png")
+wait(2)
+if exists("message.png", 4):
+    result = "Pass"
+else:
+    result = "Fail"
+f = open(report_path, "a")
+f.write("TC003,0," + result + "\n")
+f.close()
